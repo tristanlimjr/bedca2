@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <script defer src="./script/reviews.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="dashboard.html">Cosmic Odyssey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="challenges.html">Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-danger" id="logout">Logout</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center">User Reviews</h2>
+    
+        <div class="card p-3">
+            <h4>Post a Review</h4>
+            <form id="reviewForm">
+                <select id="challengeId" class="form-control mb-2" required>
+                    <option value="">Select Challenge</option>
+                </select>
+                <select id="rating" class="form-control mb-2" required>
+                    <option value="">Select Rating</option>
+                    <option value="1">⭐ - Poor</option>
+                    <option value="2">⭐⭐ - Fair</option>
+                    <option value="3">⭐⭐⭐ - Good</option>
+                    <option value="4">⭐⭐⭐⭐ - Very Good</option>
+                    <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+                </select>
+                <textarea id="reviewText" class="form-control mb-2" placeholder="Write your review here..." required></textarea>
+                <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+            </form>
+        </div>
+    
+    <div class="d-flex justify-content-center gap-2 mt-3">
+        <button id="showMyReviews" class="btn btn-secondary">Show My Reviews</button>
+        <button id="showAllReviews" class="btn btn-primary d-none">Show All Reviews</button>
+    </div>
+
+    
+        <h4 class="mt-4">Recent Reviews</h4>
+        <div id="reviewsContainer" class="mt-2"></div>
+    </div>
+    
+</body>
+</html>

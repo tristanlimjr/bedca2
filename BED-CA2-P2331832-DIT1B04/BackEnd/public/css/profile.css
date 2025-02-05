@@ -1,0 +1,41 @@
+body {
+    padding-top: 80px;
+    background: linear-gradient(to right, #000428, #004e92);
+    background: url('../dashboardbackground.jpg') no-repeat center center/cover;    
+    color: white;
+}
+p {
+    color: white;
+}
+.container {
+    margin-top: 50px;
+}
+.card {
+    background: rgb(125, 125, 187);
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+.card-header {
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+}
+.table {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.btn-danger {
+    margin-left: 15px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+#user-username {
+    font-size: 3rem;
+}

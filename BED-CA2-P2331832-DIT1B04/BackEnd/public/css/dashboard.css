@@ -1,0 +1,46 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+}
+
+.navbar .btn-danger {
+    padding: 5px 15px;
+    font-size: 16px;
+}
+.container {
+    margin-top: 50px;
+}
+body {
+    padding-top: 80px;
+    background: linear-gradient(to right, #000428, #004e92);
+    background: url('../dashboardbackground.jpg') no-repeat center center/cover;    
+    color: white;
+}
+.dashboard-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.h2 {
+    font-size: 200em;
+}
